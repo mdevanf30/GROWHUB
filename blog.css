@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#111;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#0d47a1;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:15px;
+}
+
+.nav-links a:hover{
+    color:#0d47a1;
+}
+
+.btn-primary{
+    background:#0d47a1;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    display:inline-block;
+}
+
+.btn-primary:hover{
+    background:#08306b;
+}
+
+.btn-outline{
+    border:2px solid #0d47a1;
+    color:#0d47a1;
+    padding:8px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    margin-left:10px;
+}
+
+.btn-outline:hover{
+    background:#0d47a1;
+    color:white;
+}
+
+.blog{
+    padding:80px 8%;
+    background:white;
+}
+
+.blog-title{
+    font-size:40px;
+    margin-bottom:40px;
+    font-weight:bold;
+    color:#111;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.blog-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 40px rgba(0,0,0,0.12);
+}
+
+.blog-card img{
+    width:100%;
+    display:block;
+}
+
+.blog-content{
+    padding:22px;
+}
+
+.blog-content h3{
+    font-size:18px;
+    margin-bottom:18px;
+    color:#111;
+    line-height:1.5;
+}
+
+.read-more{
+    text-decoration:none;
+    color:#0d47a1;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:0.3s;
+}
+
+.read-more:hover{
+    color:#08306b;
+}
+
